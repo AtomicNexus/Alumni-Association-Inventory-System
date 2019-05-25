@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FABB031-AE62-4271-B4D4-1163EDEFA1BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AAPIS</RootNamespace>
+    <AssemblyName>AAPIS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEvent.Designer.cs">
+      <DependentUpon>AddEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckoutItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckoutItem.Designer.cs">
+      <DependentUpon>CheckoutItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckoutItemQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckoutItemQuantity.Designer.cs">
+      <DependentUpon>CheckoutItemQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckoutOrReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckoutOrReturn.Designer.cs">
+      <DependentUpon>CheckoutOrReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecreaseItemQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecreaseItemQuantity.Designer.cs">
+      <DependentUpon>DecreaseItemQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteEvent.Designer.cs">
+      <DependentUpon>DeleteEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditItem.Designer.cs">
+      <DependentUpon>EditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditItemQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditItemQuantity.Designer.cs">
+      <DependentUpon>EditItemQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditOtherItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOtherItemInfo.Designer.cs">
+      <DependentUpon>EditOtherItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Events.Designer.cs">
+      <DependentUpon>Events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncreaseItemQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncreaseItemQuantity.Designer.cs">
+      <DependentUpon>IncreaseItemQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemovalHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemovalHistory.Designer.cs">
+      <DependentUpon>RemovalHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchItems.Designer.cs">
+      <DependentUpon>SearchItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseHistoryByEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UseHistoryByEvent.Designer.cs">
+      <DependentUpon>UseHistoryByEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseHistoryByItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UseHistoryByItem.Designer.cs">
+      <DependentUpon>UseHistoryByItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseHistoryByItemSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UseHistoryByItemSelect.Designer.cs">
+      <DependentUpon>UseHistoryByItemSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllEvents.Designer.cs">
+      <DependentUpon>ViewAllEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewCheckouts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCheckouts.Designer.cs">
+      <DependentUpon>ViewCheckouts.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEvent.resx">
+      <DependentUpon>AddEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckoutItem.resx">
+      <DependentUpon>CheckoutItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckoutItemQuantity.resx">
+      <DependentUpon>CheckoutItemQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckoutOrReturn.resx">
+      <DependentUpon>CheckoutOrReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecreaseItemQuantity.resx">
+      <DependentUpon>DecreaseItemQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteEvent.resx">
+      <DependentUpon>DeleteEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditItem.resx">
+      <DependentUpon>EditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditItemQuantity.resx">
+      <DependentUpon>EditItemQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOtherItemInfo.resx">
+      <DependentUpon>EditOtherItemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events.resx">
+      <DependentUpon>Events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncreaseItemQuantity.resx">
+      <DependentUpon>IncreaseItemQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RemovalHistory.resx">
+      <DependentUpon>RemovalHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchItems.resx">
+      <DependentUpon>SearchItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseHistoryByEvent.resx">
+      <DependentUpon>UseHistoryByEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseHistoryByItem.resx">
+      <DependentUpon>UseHistoryByItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseHistoryByItemSelect.resx">
+      <DependentUpon>UseHistoryByItemSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllEvents.resx">
+      <DependentUpon>ViewAllEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCheckouts.resx">
+      <DependentUpon>ViewCheckouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
